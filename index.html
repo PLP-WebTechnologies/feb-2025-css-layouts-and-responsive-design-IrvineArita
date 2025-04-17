@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Layout with Images</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">MySite</h1>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="item">
+      <img src="https://via.placeholder.com/400x200" alt="Content 1 Image" />
+      <h2>📘 Content Area 1</h2>
+      <p>This is some content with an image about topic 1.</p>
+    </section>
+    <section class="item">
+      <img src="https://via.placeholder.com/400x200" alt="Content 2 Image" />
+      <h2>📗 Content Area 2</h2>
+      <p>This section shows more info with visuals to help you understand.</p>
+    </section>
+    <section class="item">
+      <img src="https://via.placeholder.com/400x200" alt="Content 3 Image" />
+      <h2>📕 Content Area 3</h2>
+      <p>More visual content and a summary of features or ideas here.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 MySite. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
+
